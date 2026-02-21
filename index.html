@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- tailwind and daisy connect -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+  <!-- application tracker section -->
+  <header class="p-6 max-w-[80%] mx-auto">
+
+    
+    <h1 class="text-2xl font-bold text- mb-6">
+      Job Application Tracker
+    </h1>
+
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+
+      <div class="card bg-base-100 shadow-sm border">
+        <div class="card-body p-4">
+          <p class="text-sm text-gray-500">Total</p>
+          <p class="text-2xl font-bold">8</p>
+        </div>
+      </div>
+
+      <div class="card bg-base-100 shadow-sm border">
+        <div class="card-body p-4">
+          <p class="text-sm text-gray-500">Interview</p>
+          <p class="text-2xl font-bold text-success">0</p>
+        </div>
+      </div>
+
+      <div class="card bg-base-100 shadow-sm border">
+        <div class="card-body p-4">
+          <p class="text-sm text-gray-500">Rejected</p>
+          <p class="text-2xl font-bold text-error">0</p>
+        </div>
+      </div>
+
+    </div>
+
+    
+    <div class="divider "></div>
+
+   
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-lg font-semibold">Available Jobs</h2>
+      <p class="text-sm text-gray-500">8 jobs</p>
+    </div>
+
+    
+    <div class="">
+      <button class="btn btn-sm join-item btn-primary">All</button>
+      <button class="btn btn-sm join-item">Interview</button>
+      <button class="btn btn-sm join-item">Rejected</button>
+    </div>
+
+  </header>
+
+  <!-- cards -->
+
+  <div class="card bg-base-100 shadow-md border max-w-[80%] mx-auto ">
+    <div class="card-body">
+
+      
+      <div class="flex justify-between items-start">
+        <div>
+          <h2 class="card-title">Mobile First Corp</h2>
+          <p class="text-sm text-gray-500">React Native Developer</p>
+        </div>
+        <button class="btn btn-ghost btn-sm btn-circle opacity-50">
+          <i class="fa-solid fa-trash-can"></i>
+        </button>
+      </div>
+
+     
+      <p class="text-sm text-gray-500">
+        Remote • Full-time • $130,000 - $175,000
+      </p>
+
+     
+      <div>
+        <div class="badge badge-outline">NOT APPLIED</div>
+      </div>
+
+      <p class="text-sm">
+        Build cross-platform mobile applications using React Native.
+        Work on products used by millions of users worldwide.
+      </p>
+
+      <div class="card-actions justify-start mt-3">
+        <button class="btn btn-success btn-outline btn-sm">
+          INTERVIEW
+        </button>
+        <button class="btn btn-error btn-outline btn-sm">
+          REJECTED
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <script src="./script/script.js"></script>
+</body>
+
+</html>
