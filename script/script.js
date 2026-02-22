@@ -14,7 +14,6 @@ const interviewCount = document.getElementById("Interview");
 const rejectedCount = document.getElementById("Rejected");
 
 
-// ================= STATUS UPDATE =================
 function updateStatus(number, type) {
 
   const card = document.getElementById("card" + number);
@@ -56,7 +55,6 @@ function updateStatus(number, type) {
 
 
 
-// ================= DELETE =================
 function deleteCard(number) {
 
   const card = document.getElementById("card" + number);
@@ -82,7 +80,6 @@ function deleteCard(number) {
 
 
 
-// ================= LOOP =================
 for (let i = 1; i <= 8; i++) {
 
   const card = document.getElementById("card" + i);
@@ -115,7 +112,6 @@ for (let i = 1; i <= 8; i++) {
 
 
 
-// ================= FILTER =================
 function filterCards(type) {
 
   for (let i = 1; i <= 8; i++) {
@@ -137,7 +133,6 @@ function filterCards(type) {
 
 
 
-// ================= TAB BUTTON =================
 document.getElementById("allBtn").addEventListener("click", function () {
   filterCards("all");
 });
@@ -151,7 +146,6 @@ document.getElementById("rejectedBtn").addEventListener("click", function () {
 });
 
 
-// default load
 filterCards("all");
 
 
