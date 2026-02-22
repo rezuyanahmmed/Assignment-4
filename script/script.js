@@ -1,9 +1,3 @@
-// // let totalCount = document.getElementById('Total')
-// // let InterviewCount = document.getElementById('Interview')
-// // let RejectedCount = document.getElementById('Rejected')
-// // console.log(RejectedCount);
-
-
 
 let total = 8;
 let interviewTotal = 0;
@@ -149,7 +143,7 @@ document.getElementById("rejectedBtn").addEventListener("click", function () {
 filterCards("all");
 
 
-// empty function
+// 
 function checkEmptyState() {
 
   const emptyState = document.getElementById("emptyState");
