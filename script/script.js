@@ -48,7 +48,7 @@ function updateStatus(number, type) {
 }
 
 
-
+// -------------------------------
 function deleteCard(number) {
 
   const card = document.getElementById("card" + number);
@@ -105,7 +105,7 @@ for (let i = 1; i <= 8; i++) {
 }
 
 
-
+// -------------------------------------
 function filterCards(type) {
 
   for (let i = 1; i <= 8; i++) {
